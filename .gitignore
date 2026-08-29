@@ -1,0 +1,21 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+*.db
+.DS_Store
+.vscode/
+.idea/
+
+# Model/cache files
+.cache/
+models/
+*.pt
+*.pth
+*.bin
+
+# Temporary outputs
+temp/
+tmp/

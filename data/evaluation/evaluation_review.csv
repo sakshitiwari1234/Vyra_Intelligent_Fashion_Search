@@ -1,0 +1,320 @@
+query,candidate_products,relevant_product_ids
+black shirt,"31660: Indigo Nation Men Printed Black Shirt | category=shirt | colour=black | gender=men | pattern=printed | price=799
+4359: Free Authority Men's Melting Records Black T-shirt | category=tshirt | colour=black | gender=men | pattern=nan | price=1299
+33080: U.S. Polo Assn. Denim Co. Men Printed Cream T-Shirt | category=tshirt | colour=white | gender=men | pattern=printed | price=1299
+40954: Gini and Jony Boys Rodeo Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=799
+43500: French Connection Men White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=1799
+4752: ADIDAS Men's Red Polo T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1399
+44894: Puma Men Red T-shirts | category=tshirt | colour=red | gender=men | pattern=nan | price=499
+4804: ADIDAS Men's Coffer Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=499
+30618: Nike Men Printed Red T-shirt | category=tshirt | colour=red | gender=men | pattern=printed | price=599
+31242: Puma Men Attack White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=799",
+red kurta,"43270: Aneri Women Red Kurta | category=kurta | colour=red | gender=women | pattern=nan | price=1199
+23323: W Women Red Kurta | category=kurta | colour=red | gender=women | pattern=nan | price=699
+22766: BIBA Women Solid Red Kurta | category=kurta | colour=red | gender=women | pattern=solid | price=1799
+19105: Mother Earth Women Printed Red Kurta | category=kurta | colour=red | gender=women | pattern=printed | price=1899
+42672: Alma Women Red Printed Kurta | category=kurta | colour=red | gender=women | pattern=printed | price=1099
+30845: Fabindia Women Rust Printed Kurta | category=kurta | colour=red | gender=women | pattern=printed | price=699
+21919: BIBA Women Printed Red Kurta | category=kurta | colour=red | gender=women | pattern=printed | price=699
+28908: BIBA Women Printed Red Kurta | category=kurta | colour=red | gender=women | pattern=printed | price=1399
+40954: Gini and Jony Boys Rodeo Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=799
+25926: Femella Women Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=599",
+pink top,"11369: United Colors Of Benetton Women Light Winter Pink Tops | category=top | colour=pink | gender=women | pattern=nan | price=799
+32592: ONLY Women Pink Top | category=top | colour=pink | gender=women | pattern=nan | price=1499
+21426: Roxy Women Pink T-shirt | category=tshirt | colour=pink | gender=women | pattern=nan | price=1799
+38798: Free Authority Men Pink T-shirt | category=tshirt | colour=pink | gender=men | pattern=nan | price=599
+17608: Doodle Sporty Girl dark Pink Tshirts | category=tshirt | colour=pink | gender=women | pattern=nan | price=1199
+20247: Wrangler Women Striped Purple Top | category=top | colour=magenta | gender=women | pattern=striped | price=1699
+25926: Femella Women Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=599
+1752: Lotto Men Red Epic T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1199
+12785: Mother Earth Women Checks Pink Shirts | category=shirt | colour=pink | gender=women | pattern=checked | price=1299
+41301: Gini and Jony Grils Polo Striped Pink T-shirt | category=tshirt | colour=pink | gender=nan | pattern=striped | price=1599",
+white tshirt,"33080: U.S. Polo Assn. Denim Co. Men Printed Cream T-Shirt | category=tshirt | colour=white | gender=men | pattern=printed | price=1299
+43500: French Connection Men White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=1799
+31242: Puma Men Attack White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=799
+27356: Tantra Men 50 Bubbles White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=1599
+4804: ADIDAS Men's Coffer Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=499
+10878: Wrangler Men Red Polo Tshirts | category=tshirt | colour=red | gender=men | pattern=nan | price=899
+4752: ADIDAS Men's Red Polo T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1399
+35983: Flying Machine Women Poopy Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=1299
+1991: ADIDAS Womens Blue  Polo T-shirt | category=tshirt | colour=blue | gender=women | pattern=nan | price=799
+1752: Lotto Men Red Epic T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1199",
+red sweater,"20216: Wrangler Men Rib Red Sweater | category=sweater | colour=red | gender=men | pattern=nan | price=899
+20228: Wrangler Women Cable Red Sweater | category=sweater | colour=red | gender=women | pattern=nan | price=1199
+19528: United Colors of Benetton Men Solid Red Sweater | category=sweater | colour=red | gender=men | pattern=solid | price=1899
+25926: Femella Women Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=599
+1617: Reebok Men Shoot T-Shirt Red | category=tshirt | colour=red | gender=men | pattern=nan | price=799
+4804: ADIDAS Men's Coffer Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=499
+10878: Wrangler Men Red Polo Tshirts | category=tshirt | colour=red | gender=men | pattern=nan | price=899
+39113: Angry Birds Men Red Printed T-shirt | category=tshirt | colour=red | gender=men | pattern=printed | price=1599
+4752: ADIDAS Men's Red Polo T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1399
+2024: ADIDAS Mens Fitted Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=699",
+maroon tshirt,"20668: Classic Polo Men Striped Maroon Tshirt | category=tshirt | colour=maroon | gender=men | pattern=striped | price=699
+4804: ADIDAS Men's Coffer Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=499
+4752: ADIDAS Men's Red Polo T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1399
+40954: Gini and Jony Boys Rodeo Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=799
+27356: Tantra Men 50 Bubbles White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=1599
+33080: U.S. Polo Assn. Denim Co. Men Printed Cream T-Shirt | category=tshirt | colour=white | gender=men | pattern=printed | price=1299
+10878: Wrangler Men Red Polo Tshirts | category=tshirt | colour=red | gender=men | pattern=nan | price=899
+25926: Femella Women Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=599
+30618: Nike Men Printed Red T-shirt | category=tshirt | colour=red | gender=men | pattern=printed | price=599
+4359: Free Authority Men's Melting Records Black T-shirt | category=tshirt | colour=black | gender=men | pattern=nan | price=1299",
+men shirt,"22398: Mark Taylor Men Striped White Shirt | category=shirt | colour=white | gender=men | pattern=striped | price=499
+16332: Peter England Men Stripes Red Shirt | category=shirt | colour=red | gender=men | pattern=striped | price=1099
+12304: Genesis Men Stripes Red Shirts | category=shirt | colour=red | gender=men | pattern=striped | price=999
+31660: Indigo Nation Men Printed Black Shirt | category=shirt | colour=black | gender=men | pattern=printed | price=799
+18305: Wills Lifestyle Men Striped Pink Shirt | category=shirt | colour=pink | gender=men | pattern=striped | price=1699
+22372: Mark Taylor Men White Striped Red Shirt | category=shirt | colour=red | gender=men | pattern=striped | price=1199
+43500: French Connection Men White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=1799
+30618: Nike Men Printed Red T-shirt | category=tshirt | colour=red | gender=men | pattern=printed | price=599
+33080: U.S. Polo Assn. Denim Co. Men Printed Cream T-Shirt | category=tshirt | colour=white | gender=men | pattern=printed | price=1299
+4752: ADIDAS Men's Red Polo T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1399
+2024: ADIDAS Mens Fitted Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=699
+27356: Tantra Men 50 Bubbles White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=1599
+4804: ADIDAS Men's Coffer Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=499
+10878: Wrangler Men Red Polo Tshirts | category=tshirt | colour=red | gender=men | pattern=nan | price=899
+44894: Puma Men Red T-shirts | category=tshirt | colour=red | gender=men | pattern=nan | price=499",
+women top,"11369: United Colors Of Benetton Women Light Winter Pink Tops | category=top | colour=pink | gender=women | pattern=nan | price=799
+11033: Jealous 21 Women Check Red Tops | category=top | colour=red | gender=women | pattern=checked | price=499
+10336: United Colors of Benetton Women Stripes Black Tops | category=top | colour=black | gender=women | pattern=striped | price=1499
+32592: ONLY Women Pink Top | category=top | colour=pink | gender=women | pattern=nan | price=1499
+20247: Wrangler Women Striped Purple Top | category=top | colour=magenta | gender=women | pattern=striped | price=1699
+1991: ADIDAS Womens Blue  Polo T-shirt | category=tshirt | colour=blue | gender=women | pattern=nan | price=799
+25926: Femella Women Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=599
+21426: Roxy Women Pink T-shirt | category=tshirt | colour=pink | gender=women | pattern=nan | price=1799
+20228: Wrangler Women Cable Red Sweater | category=sweater | colour=red | gender=women | pattern=nan | price=1199
+35983: Flying Machine Women Poopy Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=1299",
+men tshirt,"1617: Reebok Men Shoot T-Shirt Red | category=tshirt | colour=red | gender=men | pattern=nan | price=799
+33080: U.S. Polo Assn. Denim Co. Men Printed Cream T-Shirt | category=tshirt | colour=white | gender=men | pattern=printed | price=1299
+1752: Lotto Men Red Epic T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1199
+20668: Classic Polo Men Striped Maroon Tshirt | category=tshirt | colour=maroon | gender=men | pattern=striped | price=699
+43500: French Connection Men White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=1799
+44894: Puma Men Red T-shirts | category=tshirt | colour=red | gender=men | pattern=nan | price=499
+16439: Levi's Men Printed Red Tshirts | category=tshirt | colour=red | gender=men | pattern=printed | price=1199
+4804: ADIDAS Men's Coffer Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=499
+4359: Free Authority Men's Melting Records Black T-shirt | category=tshirt | colour=black | gender=men | pattern=nan | price=1299
+10878: Wrangler Men Red Polo Tshirts | category=tshirt | colour=red | gender=men | pattern=nan | price=899
+2024: ADIDAS Mens Fitted Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=699
+27356: Tantra Men 50 Bubbles White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=1599
+4752: ADIDAS Men's Red Polo T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1399",
+women tshirt,"25926: Femella Women Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=599
+3903: Disney Kids Girl's Minnie And Daisy Yellow Kidswear | category=tshirt | colour=yellow | gender=women | pattern=nan | price=1099
+35983: Flying Machine Women Poopy Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=1299
+21426: Roxy Women Pink T-shirt | category=tshirt | colour=pink | gender=women | pattern=nan | price=1799
+45960: Tokyo Talkies Women Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=699
+17608: Doodle Sporty Girl dark Pink Tshirts | category=tshirt | colour=pink | gender=women | pattern=nan | price=1199
+1991: ADIDAS Womens Blue  Polo T-shirt | category=tshirt | colour=blue | gender=women | pattern=nan | price=799
+2024: ADIDAS Mens Fitted Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=699
+4804: ADIDAS Men's Coffer Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=499
+4752: ADIDAS Men's Red Polo T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1399
+43500: French Connection Men White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=1799",
+men sweater,"20216: Wrangler Men Rib Red Sweater | category=sweater | colour=red | gender=men | pattern=nan | price=899
+19528: United Colors of Benetton Men Solid Red Sweater | category=sweater | colour=red | gender=men | pattern=solid | price=1899
+20228: Wrangler Women Cable Red Sweater | category=sweater | colour=red | gender=women | pattern=nan | price=1199
+2024: ADIDAS Mens Fitted Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=699
+43500: French Connection Men White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=1799
+30618: Nike Men Printed Red T-shirt | category=tshirt | colour=red | gender=men | pattern=printed | price=599
+10878: Wrangler Men Red Polo Tshirts | category=tshirt | colour=red | gender=men | pattern=nan | price=899
+4752: ADIDAS Men's Red Polo T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1399
+1752: Lotto Men Red Epic T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1199
+31660: Indigo Nation Men Printed Black Shirt | category=shirt | colour=black | gender=men | pattern=printed | price=799",
+women kurta,"43270: Aneri Women Red Kurta | category=kurta | colour=red | gender=women | pattern=nan | price=1199
+23323: W Women Red Kurta | category=kurta | colour=red | gender=women | pattern=nan | price=699
+22766: BIBA Women Solid Red Kurta | category=kurta | colour=red | gender=women | pattern=solid | price=1799
+19105: Mother Earth Women Printed Red Kurta | category=kurta | colour=red | gender=women | pattern=printed | price=1899
+42672: Alma Women Red Printed Kurta | category=kurta | colour=red | gender=women | pattern=printed | price=1099
+30845: Fabindia Women Rust Printed Kurta | category=kurta | colour=red | gender=women | pattern=printed | price=699
+21919: BIBA Women Printed Red Kurta | category=kurta | colour=red | gender=women | pattern=printed | price=699
+28908: BIBA Women Printed Red Kurta | category=kurta | colour=red | gender=women | pattern=printed | price=1399
+20247: Wrangler Women Striped Purple Top | category=top | colour=magenta | gender=women | pattern=striped | price=1699
+25926: Femella Women Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=599",
+men striped shirt,"22398: Mark Taylor Men Striped White Shirt | category=shirt | colour=white | gender=men | pattern=striped | price=499
+16332: Peter England Men Stripes Red Shirt | category=shirt | colour=red | gender=men | pattern=striped | price=1099
+12304: Genesis Men Stripes Red Shirts | category=shirt | colour=red | gender=men | pattern=striped | price=999
+18305: Wills Lifestyle Men Striped Pink Shirt | category=shirt | colour=pink | gender=men | pattern=striped | price=1699
+22372: Mark Taylor Men White Striped Red Shirt | category=shirt | colour=red | gender=men | pattern=striped | price=1199
+20668: Classic Polo Men Striped Maroon Tshirt | category=tshirt | colour=maroon | gender=men | pattern=striped | price=699
+31660: Indigo Nation Men Printed Black Shirt | category=shirt | colour=black | gender=men | pattern=printed | price=799
+43500: French Connection Men White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=1799
+27356: Tantra Men 50 Bubbles White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=1599
+30618: Nike Men Printed Red T-shirt | category=tshirt | colour=red | gender=men | pattern=printed | price=599",
+printed men's shirt,"31660: Indigo Nation Men Printed Black Shirt | category=shirt | colour=black | gender=men | pattern=printed | price=799
+33080: U.S. Polo Assn. Denim Co. Men Printed Cream T-Shirt | category=tshirt | colour=white | gender=men | pattern=printed | price=1299
+30618: Nike Men Printed Red T-shirt | category=tshirt | colour=red | gender=men | pattern=printed | price=599
+39113: Angry Birds Men Red Printed T-shirt | category=tshirt | colour=red | gender=men | pattern=printed | price=1599
+16439: Levi's Men Printed Red Tshirts | category=tshirt | colour=red | gender=men | pattern=printed | price=1199
+43500: French Connection Men White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=1799
+22372: Mark Taylor Men White Striped Red Shirt | category=shirt | colour=red | gender=men | pattern=striped | price=1199
+27356: Tantra Men 50 Bubbles White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=1599
+22398: Mark Taylor Men Striped White Shirt | category=shirt | colour=white | gender=men | pattern=striped | price=499
+1617: Reebok Men Shoot T-Shirt Red | category=tshirt | colour=red | gender=men | pattern=nan | price=799",
+women checked top,"11033: Jealous 21 Women Check Red Tops | category=top | colour=red | gender=women | pattern=checked | price=499
+32592: ONLY Women Pink Top | category=top | colour=pink | gender=women | pattern=nan | price=1499
+12785: Mother Earth Women Checks Pink Shirts | category=shirt | colour=pink | gender=women | pattern=checked | price=1299
+20247: Wrangler Women Striped Purple Top | category=top | colour=magenta | gender=women | pattern=striped | price=1699
+25926: Femella Women Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=599
+1991: ADIDAS Womens Blue  Polo T-shirt | category=tshirt | colour=blue | gender=women | pattern=nan | price=799
+35983: Flying Machine Women Poopy Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=1299
+10336: United Colors of Benetton Women Stripes Black Tops | category=top | colour=black | gender=women | pattern=striped | price=1499
+21426: Roxy Women Pink T-shirt | category=tshirt | colour=pink | gender=women | pattern=nan | price=1799
+11369: United Colors Of Benetton Women Light Winter Pink Tops | category=top | colour=pink | gender=women | pattern=nan | price=799",
+solid men's sweater,"19528: United Colors of Benetton Men Solid Red Sweater | category=sweater | colour=red | gender=men | pattern=solid | price=1899
+20216: Wrangler Men Rib Red Sweater | category=sweater | colour=red | gender=men | pattern=nan | price=899
+1752: Lotto Men Red Epic T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1199
+20228: Wrangler Women Cable Red Sweater | category=sweater | colour=red | gender=women | pattern=nan | price=1199
+1578: Domyos Men Good Stroke Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1099
+44894: Puma Men Red T-shirts | category=tshirt | colour=red | gender=men | pattern=nan | price=499
+4804: ADIDAS Men's Coffer Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=499
+1617: Reebok Men Shoot T-Shirt Red | category=tshirt | colour=red | gender=men | pattern=nan | price=799
+4359: Free Authority Men's Melting Records Black T-shirt | category=tshirt | colour=black | gender=men | pattern=nan | price=1299
+2024: ADIDAS Mens Fitted Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=699",
+striped tshirt for men,"20668: Classic Polo Men Striped Maroon Tshirt | category=tshirt | colour=maroon | gender=men | pattern=striped | price=699
+43500: French Connection Men White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=1799
+4804: ADIDAS Men's Coffer Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=499
+2024: ADIDAS Mens Fitted Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=699
+10878: Wrangler Men Red Polo Tshirts | category=tshirt | colour=red | gender=men | pattern=nan | price=899
+1752: Lotto Men Red Epic T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1199
+27356: Tantra Men 50 Bubbles White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=1599
+44894: Puma Men Red T-shirts | category=tshirt | colour=red | gender=men | pattern=nan | price=499
+1617: Reebok Men Shoot T-Shirt Red | category=tshirt | colour=red | gender=men | pattern=nan | price=799
+16439: Levi's Men Printed Red Tshirts | category=tshirt | colour=red | gender=men | pattern=printed | price=1199",
+printed tshirt,"33080: U.S. Polo Assn. Denim Co. Men Printed Cream T-Shirt | category=tshirt | colour=white | gender=men | pattern=printed | price=1299
+16439: Levi's Men Printed Red Tshirts | category=tshirt | colour=red | gender=men | pattern=printed | price=1199
+39113: Angry Birds Men Red Printed T-shirt | category=tshirt | colour=red | gender=men | pattern=printed | price=1599
+30618: Nike Men Printed Red T-shirt | category=tshirt | colour=red | gender=men | pattern=printed | price=599
+31660: Indigo Nation Men Printed Black Shirt | category=shirt | colour=black | gender=men | pattern=printed | price=799
+43500: French Connection Men White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=1799
+35983: Flying Machine Women Poopy Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=1299
+4359: Free Authority Men's Melting Records Black T-shirt | category=tshirt | colour=black | gender=men | pattern=nan | price=1299
+1752: Lotto Men Red Epic T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1199
+4804: ADIDAS Men's Coffer Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=499",
+women red top under 1000,"11033: Jealous 21 Women Check Red Tops | category=top | colour=red | gender=women | pattern=checked | price=499
+32592: ONLY Women Pink Top | category=top | colour=pink | gender=women | pattern=nan | price=1499
+25926: Femella Women Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=599
+20228: Wrangler Women Cable Red Sweater | category=sweater | colour=red | gender=women | pattern=nan | price=1199
+45960: Tokyo Talkies Women Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=699
+11369: United Colors Of Benetton Women Light Winter Pink Tops | category=top | colour=pink | gender=women | pattern=nan | price=799
+35983: Flying Machine Women Poopy Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=1299
+20247: Wrangler Women Striped Purple Top | category=top | colour=magenta | gender=women | pattern=striped | price=1699
+43270: Aneri Women Red Kurta | category=kurta | colour=red | gender=women | pattern=nan | price=1199
+42672: Alma Women Red Printed Kurta | category=kurta | colour=red | gender=women | pattern=printed | price=1099",
+men black shirt under 1000,"31660: Indigo Nation Men Printed Black Shirt | category=shirt | colour=black | gender=men | pattern=printed | price=799
+27356: Tantra Men 50 Bubbles White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=1599
+4359: Free Authority Men's Melting Records Black T-shirt | category=tshirt | colour=black | gender=men | pattern=nan | price=1299
+43500: French Connection Men White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=1799
+31242: Puma Men Attack White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=799
+33080: U.S. Polo Assn. Denim Co. Men Printed Cream T-Shirt | category=tshirt | colour=white | gender=men | pattern=printed | price=1299
+2024: ADIDAS Mens Fitted Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=699
+1752: Lotto Men Red Epic T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1199
+4752: ADIDAS Men's Red Polo T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1399
+44894: Puma Men Red T-shirts | category=tshirt | colour=red | gender=men | pattern=nan | price=499",
+red kurta under 1000,"23323: W Women Red Kurta | category=kurta | colour=red | gender=women | pattern=nan | price=699
+30845: Fabindia Women Rust Printed Kurta | category=kurta | colour=red | gender=women | pattern=printed | price=699
+21919: BIBA Women Printed Red Kurta | category=kurta | colour=red | gender=women | pattern=printed | price=699
+43270: Aneri Women Red Kurta | category=kurta | colour=red | gender=women | pattern=nan | price=1199
+42672: Alma Women Red Printed Kurta | category=kurta | colour=red | gender=women | pattern=printed | price=1099
+19105: Mother Earth Women Printed Red Kurta | category=kurta | colour=red | gender=women | pattern=printed | price=1899
+22766: BIBA Women Solid Red Kurta | category=kurta | colour=red | gender=women | pattern=solid | price=1799
+28908: BIBA Women Printed Red Kurta | category=kurta | colour=red | gender=women | pattern=printed | price=1399
+1752: Lotto Men Red Epic T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1199
+40954: Gini and Jony Boys Rodeo Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=799",
+pink women top under 2000,"11369: United Colors Of Benetton Women Light Winter Pink Tops | category=top | colour=pink | gender=women | pattern=nan | price=799
+32592: ONLY Women Pink Top | category=top | colour=pink | gender=women | pattern=nan | price=1499
+21426: Roxy Women Pink T-shirt | category=tshirt | colour=pink | gender=women | pattern=nan | price=1799
+20247: Wrangler Women Striped Purple Top | category=top | colour=magenta | gender=women | pattern=striped | price=1699
+11033: Jealous 21 Women Check Red Tops | category=top | colour=red | gender=women | pattern=checked | price=499
+17608: Doodle Sporty Girl dark Pink Tshirts | category=tshirt | colour=pink | gender=women | pattern=nan | price=1199
+25926: Femella Women Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=599
+1991: ADIDAS Womens Blue  Polo T-shirt | category=tshirt | colour=blue | gender=women | pattern=nan | price=799
+45960: Tokyo Talkies Women Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=699
+12785: Mother Earth Women Checks Pink Shirts | category=shirt | colour=pink | gender=women | pattern=checked | price=1299",
+men striped tshirt under 1000,"20668: Classic Polo Men Striped Maroon Tshirt | category=tshirt | colour=maroon | gender=men | pattern=striped | price=699
+27356: Tantra Men 50 Bubbles White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=1599
+43500: French Connection Men White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=1799
+1752: Lotto Men Red Epic T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1199
+2024: ADIDAS Mens Fitted Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=699
+16439: Levi's Men Printed Red Tshirts | category=tshirt | colour=red | gender=men | pattern=printed | price=1199
+31242: Puma Men Attack White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=799
+4804: ADIDAS Men's Coffer Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=499
+31660: Indigo Nation Men Printed Black Shirt | category=shirt | colour=black | gender=men | pattern=printed | price=799
+10878: Wrangler Men Red Polo Tshirts | category=tshirt | colour=red | gender=men | pattern=nan | price=899",
+women red tshirt under 1500,"25926: Femella Women Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=599
+35983: Flying Machine Women Poopy Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=1299
+45960: Tokyo Talkies Women Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=699
+2024: ADIDAS Mens Fitted Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=699
+16439: Levi's Men Printed Red Tshirts | category=tshirt | colour=red | gender=men | pattern=printed | price=1199
+10878: Wrangler Men Red Polo Tshirts | category=tshirt | colour=red | gender=men | pattern=nan | price=899
+1991: ADIDAS Womens Blue  Polo T-shirt | category=tshirt | colour=blue | gender=women | pattern=nan | price=799
+4752: ADIDAS Men's Red Polo T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1399
+20228: Wrangler Women Cable Red Sweater | category=sweater | colour=red | gender=women | pattern=nan | price=1199
+1617: Reebok Men Shoot T-Shirt Red | category=tshirt | colour=red | gender=men | pattern=nan | price=799",
+something red for women,"43270: Aneri Women Red Kurta | category=kurta | colour=red | gender=women | pattern=nan | price=1199
+25926: Femella Women Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=599
+23323: W Women Red Kurta | category=kurta | colour=red | gender=women | pattern=nan | price=699
+11033: Jealous 21 Women Check Red Tops | category=top | colour=red | gender=women | pattern=checked | price=499
+22766: BIBA Women Solid Red Kurta | category=kurta | colour=red | gender=women | pattern=solid | price=1799
+20228: Wrangler Women Cable Red Sweater | category=sweater | colour=red | gender=women | pattern=nan | price=1199
+19105: Mother Earth Women Printed Red Kurta | category=kurta | colour=red | gender=women | pattern=printed | price=1899
+35983: Flying Machine Women Poopy Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=1299
+42672: Alma Women Red Printed Kurta | category=kurta | colour=red | gender=women | pattern=printed | price=1099
+45960: Tokyo Talkies Women Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=699
+4804: ADIDAS Men's Coffer Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=499
+10878: Wrangler Men Red Polo Tshirts | category=tshirt | colour=red | gender=men | pattern=nan | price=899
+20216: Wrangler Men Rib Red Sweater | category=sweater | colour=red | gender=men | pattern=nan | price=899
+4752: ADIDAS Men's Red Polo T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1399",
+pink women's clothing,"11369: United Colors Of Benetton Women Light Winter Pink Tops | category=top | colour=pink | gender=women | pattern=nan | price=799
+21426: Roxy Women Pink T-shirt | category=tshirt | colour=pink | gender=women | pattern=nan | price=1799
+32592: ONLY Women Pink Top | category=top | colour=pink | gender=women | pattern=nan | price=1499
+12785: Mother Earth Women Checks Pink Shirts | category=shirt | colour=pink | gender=women | pattern=checked | price=1299
+17608: Doodle Sporty Girl dark Pink Tshirts | category=tshirt | colour=pink | gender=women | pattern=nan | price=1199
+25926: Femella Women Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=599
+1991: ADIDAS Womens Blue  Polo T-shirt | category=tshirt | colour=blue | gender=women | pattern=nan | price=799
+38798: Free Authority Men Pink T-shirt | category=tshirt | colour=pink | gender=men | pattern=nan | price=599
+45960: Tokyo Talkies Women Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=699
+35983: Flying Machine Women Poopy Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=1299",
+striped clothing for men,"22398: Mark Taylor Men Striped White Shirt | category=shirt | colour=white | gender=men | pattern=striped | price=499
+20668: Classic Polo Men Striped Maroon Tshirt | category=tshirt | colour=maroon | gender=men | pattern=striped | price=699
+16332: Peter England Men Stripes Red Shirt | category=shirt | colour=red | gender=men | pattern=striped | price=1099
+12304: Genesis Men Stripes Red Shirts | category=shirt | colour=red | gender=men | pattern=striped | price=999
+18305: Wills Lifestyle Men Striped Pink Shirt | category=shirt | colour=pink | gender=men | pattern=striped | price=1699
+22372: Mark Taylor Men White Striped Red Shirt | category=shirt | colour=red | gender=men | pattern=striped | price=1199
+31660: Indigo Nation Men Printed Black Shirt | category=shirt | colour=black | gender=men | pattern=printed | price=799
+43500: French Connection Men White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=1799
+10336: United Colors of Benetton Women Stripes Black Tops | category=top | colour=black | gender=women | pattern=striped | price=1499
+20247: Wrangler Women Striped Purple Top | category=top | colour=magenta | gender=women | pattern=striped | price=1699",
+warm sweater,"20216: Wrangler Men Rib Red Sweater | category=sweater | colour=red | gender=men | pattern=nan | price=899
+20228: Wrangler Women Cable Red Sweater | category=sweater | colour=red | gender=women | pattern=nan | price=1199
+19528: United Colors of Benetton Men Solid Red Sweater | category=sweater | colour=red | gender=men | pattern=solid | price=1899
+1578: Domyos Men Good Stroke Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1099
+1617: Reebok Men Shoot T-Shirt Red | category=tshirt | colour=red | gender=men | pattern=nan | price=799
+4359: Free Authority Men's Melting Records Black T-shirt | category=tshirt | colour=black | gender=men | pattern=nan | price=1299
+39113: Angry Birds Men Red Printed T-shirt | category=tshirt | colour=red | gender=men | pattern=printed | price=1599
+2024: ADIDAS Mens Fitted Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=699
+1752: Lotto Men Red Epic T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1199
+4804: ADIDAS Men's Coffer Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=499",
+something black for men,"4359: Free Authority Men's Melting Records Black T-shirt | category=tshirt | colour=black | gender=men | pattern=nan | price=1299
+31660: Indigo Nation Men Printed Black Shirt | category=shirt | colour=black | gender=men | pattern=printed | price=799
+10336: United Colors of Benetton Women Stripes Black Tops | category=top | colour=black | gender=women | pattern=striped | price=1499
+31242: Puma Men Attack White T-shirt | category=tshirt | colour=white | gender=men | pattern=nan | price=799
+44894: Puma Men Red T-shirts | category=tshirt | colour=red | gender=men | pattern=nan | price=499
+1617: Reebok Men Shoot T-Shirt Red | category=tshirt | colour=red | gender=men | pattern=nan | price=799
+1578: Domyos Men Good Stroke Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1099
+4804: ADIDAS Men's Coffer Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=499
+20216: Wrangler Men Rib Red Sweater | category=sweater | colour=red | gender=men | pattern=nan | price=899
+38798: Free Authority Men Pink T-shirt | category=tshirt | colour=pink | gender=men | pattern=nan | price=599",
+red clothing for women,"43270: Aneri Women Red Kurta | category=kurta | colour=red | gender=women | pattern=nan | price=1199
+25926: Femella Women Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=599
+23323: W Women Red Kurta | category=kurta | colour=red | gender=women | pattern=nan | price=699
+11033: Jealous 21 Women Check Red Tops | category=top | colour=red | gender=women | pattern=checked | price=499
+22766: BIBA Women Solid Red Kurta | category=kurta | colour=red | gender=women | pattern=solid | price=1799
+20228: Wrangler Women Cable Red Sweater | category=sweater | colour=red | gender=women | pattern=nan | price=1199
+19105: Mother Earth Women Printed Red Kurta | category=kurta | colour=red | gender=women | pattern=printed | price=1899
+35983: Flying Machine Women Poopy Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=1299
+42672: Alma Women Red Printed Kurta | category=kurta | colour=red | gender=women | pattern=printed | price=1099
+45960: Tokyo Talkies Women Red T-shirt | category=tshirt | colour=red | gender=women | pattern=nan | price=699
+2024: ADIDAS Mens Fitted Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=699
+4804: ADIDAS Men's Coffer Red T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=499
+4752: ADIDAS Men's Red Polo T-shirt | category=tshirt | colour=red | gender=men | pattern=nan | price=1399
+10878: Wrangler Men Red Polo Tshirts | category=tshirt | colour=red | gender=men | pattern=nan | price=899
+44894: Puma Men Red T-shirts | category=tshirt | colour=red | gender=men | pattern=nan | price=499
+1617: Reebok Men Shoot T-Shirt Red | category=tshirt | colour=red | gender=men | pattern=nan | price=799",
