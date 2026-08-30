@@ -77,3 +77,52 @@ Catalogue images and query images are encoded into normalized embeddings and ran
 ### Engineering Insight
 
 Visual retrieval should be treated as an additional retrieval signal rather than replacing structured constraints or text semantics.
+
+## Iteration 2 — Multimodal Hybrid Search V1
+
+Status: Completed
+
+### Goal
+
+Combine text understanding and visual similarity while preserving mandatory user constraints.
+
+### Change
+
+Integrated:
+
+- MiniLM semantic similarity
+- CLIP visual similarity
+- deterministic hard constraint filtering
+- soft preference scoring
+- multimodal reranking
+
+The first multimodal scoring formula uses:
+
+- 50% semantic relevance
+- 40% visual similarity
+- 10% soft preference score
+
+### Verification
+
+Test query:
+
+`red tshirt for men under 1000`
+
+Reference image:
+
+`1617.jpg`
+
+Parsed hard constraints:
+
+- category = tshirt
+- colour = red
+- gender = men
+- max price = 1000
+
+All returned products satisfied every hard constraint.
+
+Product 1617, whose image was used as the reference, ranked first.
+
+### Engineering Insight
+
+Visual similarity and semantic relevance are useful ranking signals, but neither is allowed to override mandatory user constraints.
