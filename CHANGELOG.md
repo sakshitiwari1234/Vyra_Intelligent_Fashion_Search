@@ -187,3 +187,52 @@ Multimodal search should not simply blend embedding scores.
 The system must also reason about which constraints were explicitly supplied by
 the user and which attributes can safely be inferred from visual context.
 
+## Iteration 4 — Uploaded Image Intent Understanding
+
+Status: Completed
+
+### Goal
+
+Allow VYRA to infer structured fashion attributes from an arbitrary uploaded image.
+
+### Change
+
+Added CLIP-based zero-shot image understanding for:
+
+- category
+- colour
+- gender
+
+The system uses confidence thresholds before converting image predictions into hard constraints.
+
+Explicit text constraints remain authoritative and are never overwritten.
+
+### Verification
+
+Test image:
+
+`1617.jpg`
+
+Image-only query:
+
+`something similar`
+
+CLIP predictions:
+
+- category = tshirt, confidence ≈ 0.72
+- colour = red, confidence ≈ 0.89
+- gender = men, confidence ≈ 0.95
+
+All three predictions passed the configured thresholds and were added to the final intent.
+
+### Result
+
+Final intent:
+
+- category = tshirt
+- colour = red
+- gender = men
+
+### Engineering Insight
+
+Image understanding should be confidence-gated rather than blindly converting every visual prediction into a mandatory constraint.
