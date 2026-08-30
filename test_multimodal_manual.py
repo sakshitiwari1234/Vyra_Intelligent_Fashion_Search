@@ -7,7 +7,7 @@ from backend.services.filters import apply_hard_filters
 from backend.services.semantic_search import SemanticSearchEngine
 from backend.services.visual_search import VisualSearchEngine
 from backend.services.multimodal_search import MultimodalSearchEngine
-
+from backend.services.image_intent_inference import ImageIntentInference
 
 PROJECT_ROOT = Path(__file__).resolve().parent
 
@@ -79,6 +79,26 @@ query_image_path = (
 
 intent = parse_query(
     query
+)
+
+image_intent_engine = ImageIntentInference(
+    products=products,
+    project_root=PROJECT_ROOT,
+)
+
+intent, inferred_from_image = (
+    image_intent_engine.enrich_intent(
+        intent=intent,
+        query_image_path=query_image_path,
+    )
+)
+
+
+print(intent)
+
+print(
+    "\nInferred from image:",
+    inferred_from_image,
 )
 
 

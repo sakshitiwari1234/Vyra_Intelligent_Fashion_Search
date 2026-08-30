@@ -129,3 +129,61 @@ Visual similarity and semantic relevance are useful ranking signals, but neither
 A second test using a red T-shirt reference image with the query
 "something similar but black" returned only black products, confirming that
 textual hard constraints can override visual appearance.
+
+
+## Iteration 3 — Image-Aware Intent Inference
+
+Status: Completed
+
+### Goal
+
+Allow VYRA to infer missing structured constraints from the reference image when
+the user provides an incomplete multimodal request.
+
+### Example
+
+Reference image:
+
+`1617.jpg` — red men's T-shirt
+
+Text query:
+
+`something similar but black`
+
+### Previous Behaviour
+
+The text parser extracted only:
+
+- colour = black
+
+This allowed black products across multiple categories and genders.
+
+### Change
+
+Added an image-aware intent enrichment layer.
+
+When the reference image corresponds to a known catalogue product, VYRA can
+inherit missing metadata such as:
+
+- category
+- gender
+
+Explicit text constraints always take priority over image-derived attributes.
+
+### Result
+
+The enriched intent became:
+
+- colour = black
+- category = tshirt
+- gender = men
+
+The final search returned only a black men's T-shirt.
+
+### Engineering Insight
+
+Multimodal search should not simply blend embedding scores.
+
+The system must also reason about which constraints were explicitly supplied by
+the user and which attributes can safely be inferred from visual context.
+
