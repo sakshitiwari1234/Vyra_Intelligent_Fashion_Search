@@ -126,3 +126,6 @@ Product 1617, whose image was used as the reference, ranked first.
 ### Engineering Insight
 
 Visual similarity and semantic relevance are useful ranking signals, but neither is allowed to override mandatory user constraints.
+A second test using a red T-shirt reference image with the query
+"something similar but black" returned only black products, confirming that
+textual hard constraints can override visual appearance.

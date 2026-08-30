@@ -73,3 +73,40 @@ Verified that every returned result was:
 ## Status
 
 Completed.
+
+## Verification Case 2 — Text Override
+
+### Input
+
+Reference image:
+
+`1617.jpg` — red men's T-shirt
+
+Text query:
+
+`something similar but black`
+
+### Parsed Intent
+
+- colour = black
+- no explicit category
+- no explicit gender
+
+### Result
+
+All returned products were black.
+
+The system preserved visual similarity while enforcing the textual colour override.
+
+### Observation
+
+Because the text did not explicitly specify a category, results were allowed across
+shirt, tshirt and top categories.
+
+### Insight
+
+A future multimodal reasoning layer should infer likely product category from the
+reference image when the user uses phrases such as "similar to this" without
+restating the category.
+
+
