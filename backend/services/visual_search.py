@@ -11,6 +11,13 @@ MODEL_NAME = "openai/clip-vit-base-patch32"
 
 
 class VisualSearchEngine:
+    """
+    CLIP-based visual retrieval engine for VYRA.
+
+    Catalogue images are converted into normalized CLIP embeddings.
+    A query image is encoded using the same model and ranked using
+    cosine similarity.
+    """
 
     def __init__(
         self,
@@ -18,7 +25,7 @@ class VisualSearchEngine:
         project_root: Path,
     ):
         self.products = products.copy()
-        self.project_root = project_root
+        self.project_root = Path(project_root)
 
         self.device = (
             "cuda"
@@ -28,7 +35,11 @@ class VisualSearchEngine:
 
         print(
             "Visual search device:",
-            self.device
+            self.device,
+        )
+
+        print(
+            "Loading CLIP model..."
         )
 
         self.model = (
@@ -36,6 +47,8 @@ class VisualSearchEngine:
             .from_pretrained(MODEL_NAME)
             .to(self.device)
         )
+
+        self.model.eval()
 
         self.processor = (
             CLIPProcessor
@@ -46,6 +59,9 @@ class VisualSearchEngine:
             self._build_catalogue_embeddings()
         )
 
+    # --------------------------------------------------
+    # IMAGE PATH
+    # --------------------------------------------------
 
     def _resolve_image_path(
         self,
@@ -64,6 +80,9 @@ class VisualSearchEngine:
             / path
         )
 
+    # --------------------------------------------------
+    # IMAGE LOADING
+    # --------------------------------------------------
 
     def _load_image(
         self,
@@ -76,38 +95,53 @@ class VisualSearchEngine:
             .convert("RGB")
         )
 
+    # --------------------------------------------------
+    # CLIP IMAGE ENCODING
+    # --------------------------------------------------
 
     def _encode_images(
         self,
         images,
-    ):
+    ) -> np.ndarray:
+        """
+        Convert PIL images into normalized CLIP image embeddings.
+        """
 
         inputs = self.processor(
             images=images,
             return_tensors="pt",
-            padding=True,
         )
 
-        inputs = {
-            key: value.to(self.device)
-            for key, value
-            in inputs.items()
-        }
+        pixel_values = (
+            inputs["pixel_values"]
+            .to(self.device)
+        )
 
         with torch.no_grad():
 
-            embeddings = (
-                self.model
-                .get_image_features(
-                    **inputs
+            vision_outputs = (
+                self.model.vision_model(
+                    pixel_values=pixel_values
                 )
             )
 
-        embeddings = torch.nn.functional.normalize(
-            embeddings,
-            p=2,
-            dim=1,
-        )
+            pooled_output = (
+                vision_outputs.pooler_output
+            )
+
+            embeddings = (
+                self.model.visual_projection(
+                    pooled_output
+                )
+            )
+
+            embeddings = (
+                torch.nn.functional.normalize(
+                    embeddings,
+                    p=2,
+                    dim=-1,
+                )
+            )
 
         return (
             embeddings
@@ -115,10 +149,13 @@ class VisualSearchEngine:
             .numpy()
         )
 
+    # --------------------------------------------------
+    # BUILD CATALOGUE INDEX
+    # --------------------------------------------------
 
     def _build_catalogue_embeddings(
         self,
-    ):
+    ) -> np.ndarray:
 
         embeddings = []
         valid_indices = []
@@ -127,17 +164,25 @@ class VisualSearchEngine:
             "Building catalogue image embeddings..."
         )
 
-        for index, row in self.products.iterrows():
+        total_products = len(
+            self.products
+        )
 
-            image_path = self._resolve_image_path(
-                row["image_path"]
+        for count, (index, row) in enumerate(
+            self.products.iterrows(),
+            start=1,
+        ):
+
+            image_path = (
+                self._resolve_image_path(
+                    row["image_path"]
+                )
             )
 
             if not image_path.exists():
 
                 print(
-                    "Missing image:",
-                    image_path
+                    f"Missing image: {image_path}"
                 )
 
                 continue
@@ -162,19 +207,19 @@ class VisualSearchEngine:
                     index
                 )
 
+                print(
+                    f"Embedded "
+                    f"{count}/{total_products}: "
+                    f"{row['product_id']}"
+                )
+
             except Exception as error:
 
                 print(
                     "Image error:",
                     image_path,
-                    error
+                    error,
                 )
-
-        self.products = (
-            self.products
-            .loc[valid_indices]
-            .reset_index(drop=True)
-        )
 
         if not embeddings:
 
@@ -183,21 +228,32 @@ class VisualSearchEngine:
                 "could be embedded."
             )
 
-        print(
-            "Catalogue embeddings created:",
-            len(embeddings)
+        self.products = (
+            self.products
+            .loc[valid_indices]
+            .reset_index(drop=True)
         )
 
-        return np.vstack(
+        matrix = np.vstack(
             embeddings
         )
 
+        print(
+            "\nCatalogue embeddings created:",
+            len(matrix),
+        )
+
+        return matrix
+
+    # --------------------------------------------------
+    # VISUAL SEARCH
+    # --------------------------------------------------
 
     def search_by_image(
         self,
         query_image_path,
-        top_k=5,
-    ):
+        top_k: int = 5,
+    ) -> pd.DataFrame:
 
         query_image_path = Path(
             query_image_path
@@ -206,12 +262,14 @@ class VisualSearchEngine:
         if not query_image_path.exists():
 
             raise FileNotFoundError(
-                f"Query image not found:\n"
+                f"Query image not found: "
                 f"{query_image_path}"
             )
 
-        query_image = self._load_image(
-            query_image_path
+        query_image = (
+            self._load_image(
+                query_image_path
+            )
         )
 
         query_embedding = (
@@ -220,12 +278,17 @@ class VisualSearchEngine:
             )[0]
         )
 
+        # Both vectors are normalized,
+        # therefore dot product = cosine similarity.
         similarities = (
             self.image_embeddings
             @ query_embedding
         )
 
-        results = self.products.copy()
+        results = (
+            self.products
+            .copy()
+        )
 
         results[
             "visual_score"
@@ -242,3 +305,7 @@ class VisualSearchEngine:
         )
 
         return results
+    
+    
+    
+
