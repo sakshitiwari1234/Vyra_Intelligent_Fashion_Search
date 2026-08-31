@@ -14,9 +14,10 @@ class UploadedImageIntentEngine:
     Zero-shot attribute inference for arbitrary uploaded fashion images.
 
     Rules:
-    - infer only from a small fixed label set
+    - infer only from a controlled label set
     - use confidence thresholds
     - never overwrite explicit text constraints
+    - reuse an existing CLIP model when available
     """
 
     CATEGORY_LABELS = [
@@ -43,7 +44,12 @@ class UploadedImageIntentEngine:
         "women",
     ]
 
-    def __init__(self, device=None):
+    def __init__(
+        self,
+        device=None,
+        model=None,
+        processor=None,
+    ):
         self.device = device or (
             "cuda"
             if torch.cuda.is_available()
@@ -55,22 +61,40 @@ class UploadedImageIntentEngine:
             self.device,
         )
 
-        print(
-            "Loading CLIP model for uploaded-image inference..."
-        )
+        # Reuse an already loaded CLIP model if supplied.
+        if (
+            model is not None
+            and processor is not None
+        ):
+            self.model = model
+            self.processor = processor
 
-        self.model = (
-            CLIPModel
-            .from_pretrained(MODEL_NAME)
-            .to(self.device)
-        )
+            print(
+                "Reusing existing CLIP model."
+            )
 
-        self.model.eval()
+        else:
+            print(
+                "Loading CLIP model for "
+                "uploaded-image inference..."
+            )
 
-        self.processor = (
-            CLIPProcessor
-            .from_pretrained(MODEL_NAME)
-        )
+            self.model = (
+                CLIPModel
+                .from_pretrained(MODEL_NAME)
+                .to(self.device)
+            )
+
+            self.model.eval()
+
+            self.processor = (
+                CLIPProcessor
+                .from_pretrained(MODEL_NAME)
+            )
+
+    # --------------------------------------------------
+    # IMAGE LOADING
+    # --------------------------------------------------
 
     def _load_image(
         self,
@@ -91,6 +115,10 @@ class UploadedImageIntentEngine:
             .convert("RGB")
         )
 
+    # --------------------------------------------------
+    # ZERO-SHOT CLASSIFICATION
+    # --------------------------------------------------
+
     def _predict_label(
         self,
         image,
@@ -98,8 +126,8 @@ class UploadedImageIntentEngine:
         prompt_template,
     ):
         """
-        Perform CLIP zero-shot classification
-        over a fixed set of candidate labels.
+        Compare an image against a controlled
+        list of text labels using CLIP.
         """
 
         prompts = [
@@ -117,12 +145,15 @@ class UploadedImageIntentEngine:
         )
 
         inputs = {
-            key: value.to(self.device)
+            key: value.to(
+                self.device
+            )
             for key, value
             in inputs.items()
         }
 
         with torch.no_grad():
+
             outputs = self.model(
                 **inputs
             )
@@ -163,13 +194,17 @@ class UploadedImageIntentEngine:
             },
         }
 
+    # --------------------------------------------------
+    # IMAGE ATTRIBUTE INFERENCE
+    # --------------------------------------------------
+
     def infer_attributes(
         self,
         image_path,
     ):
         """
         Infer category, colour and gender
-        from an arbitrary uploaded image.
+        from an uploaded fashion image.
         """
 
         image = self._load_image(
@@ -215,6 +250,10 @@ class UploadedImageIntentEngine:
             "gender": gender,
         }
 
+    # --------------------------------------------------
+    # INTENT ENRICHMENT
+    # --------------------------------------------------
+
     def enrich_intent(
         self,
         intent,
@@ -224,9 +263,11 @@ class UploadedImageIntentEngine:
         gender_threshold=0.65,
     ):
         """
-        Fill missing intent attributes using image predictions.
+        Fill only missing intent attributes using
+        confidence-gated image predictions.
 
-        Explicit text-derived attributes are never overwritten.
+        Explicit text-derived attributes are
+        never overwritten.
         """
 
         predictions = (
@@ -258,9 +299,7 @@ class UploadedImageIntentEngine:
                 ]["label"]
             )
 
-            intent.category = (
-                category
-            )
+            intent.category = category
 
             if (
                 "category"
@@ -342,9 +381,7 @@ class UploadedImageIntentEngine:
                 ]["label"]
             )
 
-            intent.gender = (
-                gender
-            )
+            intent.gender = gender
 
             if (
                 "gender"

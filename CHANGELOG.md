@@ -296,3 +296,48 @@ through final retrieval.
 Multimodal retrieval becomes reliable only when modality fusion is separated from
 constraint authority. Explicit user text remains authoritative while image-derived
 attributes fill missing context.
+
+## Iteration 6 — CLIP Model Reuse Optimization
+
+Status: Completed
+
+### Goal
+
+Reduce unnecessary model loading and improve startup efficiency.
+
+### Problem
+
+The multimodal pipeline loaded CLIP twice:
+
+- once for visual retrieval
+- once for uploaded-image intent inference
+
+This duplicated memory usage and increased startup time.
+
+### Change
+
+Updated the uploaded-image intent engine to reuse the CLIP model and processor
+already loaded by the visual search engine.
+
+### Verification
+
+The orchestrator now reports:
+
+`Reusing existing CLIP model.`
+
+Only one CLIP model is loaded during startup.
+
+### Result
+
+Multimodal retrieval behavior remained unchanged.
+
+The test query:
+
+`something similar but black`
+
+still returned the correct black men's T-shirt.
+
+### Engineering Insight
+
+Heavy foundation models should be shared across compatible pipeline components
+instead of instantiated independently.

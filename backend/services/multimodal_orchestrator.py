@@ -14,12 +14,15 @@ from backend.services.multimodal_search import (
 
 class MultimodalOrchestrator:
     """
-    End-to-end multimodal VYRA flow.
+    End-to-end multimodal VYRA orchestration.
 
     Priority:
-    1. explicit text constraints
-    2. confidence-gated image inference
-    3. semantic + visual ranking
+    1. Explicit text constraints
+    2. Confidence-gated image inference
+    3. Semantic + visual ranking
+
+    The CLIP model already loaded by VisualSearchEngine
+    is reused for uploaded-image understanding.
     """
 
     def __init__(
@@ -32,18 +35,20 @@ class MultimodalOrchestrator:
         self.products = products.copy()
         self.project_root = Path(project_root)
 
-        self.uploaded_image_intent = (
-            UploadedImageIntentEngine(
-                device=visual_engine.device
-            )
+        self.semantic_engine = semantic_engine
+        self.visual_engine = visual_engine
+
+        # Reuse the CLIP model that VisualSearchEngine already loaded.
+        self.uploaded_image_intent = UploadedImageIntentEngine(
+            device=self.visual_engine.device,
+            model=self.visual_engine.model,
+            processor=self.visual_engine.processor,
         )
 
-        self.multimodal_engine = (
-            MultimodalSearchEngine(
-                products=self.products,
-                semantic_engine=semantic_engine,
-                visual_engine=visual_engine,
-            )
+        self.multimodal_engine = MultimodalSearchEngine(
+            products=self.products,
+            semantic_engine=self.semantic_engine,
+            visual_engine=self.visual_engine,
         )
 
     def search(
@@ -52,10 +57,12 @@ class MultimodalOrchestrator:
         image_path,
         top_k: int = 5,
     ):
-        # 1. Parse explicit text intent
-        intent = parse_query(
-            query
-        )
+        """
+        Run the complete multimodal VYRA pipeline.
+        """
+
+        # 1. Parse explicit user text.
+        intent = parse_query(query)
 
         text_intent_before_image = {
             "category": intent.category,
@@ -65,27 +72,24 @@ class MultimodalOrchestrator:
             "max_price": intent.max_price,
         }
 
-        # 2. Fill only missing attributes from image
+        # 2. Fill missing attributes using image understanding.
         intent, inferred, predictions = (
-            self.uploaded_image_intent
-            .enrich_intent(
+            self.uploaded_image_intent.enrich_intent(
                 intent=intent,
                 image_path=image_path,
             )
         )
 
-        # 3. Perform final multimodal search
-        results = (
-            self.multimodal_engine
-            .search(
-                query=query,
-                query_image_path=image_path,
-                intent=intent,
-                hard_filter_function=apply_hard_filters,
-                top_k=top_k,
-            )
+        # 3. Perform constraint-safe multimodal retrieval.
+        results = self.multimodal_engine.search(
+            query=query,
+            query_image_path=image_path,
+            intent=intent,
+            hard_filter_function=apply_hard_filters,
+            top_k=top_k,
         )
 
+        # 4. Return an explainable response.
         return {
             "query": query,
             "image_path": str(image_path),
