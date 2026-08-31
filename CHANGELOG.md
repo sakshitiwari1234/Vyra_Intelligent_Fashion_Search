@@ -236,3 +236,63 @@ Final intent:
 ### Engineering Insight
 
 Image understanding should be confidence-gated rather than blindly converting every visual prediction into a mandatory constraint.
+
+
+## Iteration 5 — End-to-End Multimodal Orchestration
+
+Status: Completed
+
+### Goal
+
+Combine text parsing, uploaded-image understanding, hard constraints,
+semantic retrieval and visual retrieval into one end-to-end VYRA pipeline.
+
+### Change
+
+Added a multimodal orchestration layer that:
+
+1. parses explicit text constraints
+2. infers missing attributes from the uploaded image
+3. preserves text-over-image precedence
+4. performs constraint-safe multimodal retrieval
+5. returns the final intent and ranked products
+
+### Verification
+
+Text query:
+
+`something similar but black`
+
+Reference image:
+
+`1617.jpg`
+
+Text-derived intent:
+
+- colour = black
+
+Image-derived attributes:
+
+- category = tshirt
+- gender = men
+
+Final intent:
+
+- category = tshirt
+- colour = black
+- gender = men
+
+Final result:
+
+`4359 — Free Authority Men's Melting Records Black T-shirt`
+
+### Result
+
+The complete multimodal pipeline executed successfully from input interpretation
+through final retrieval.
+
+### Engineering Insight
+
+Multimodal retrieval becomes reliable only when modality fusion is separated from
+constraint authority. Explicit user text remains authoritative while image-derived
+attributes fill missing context.
