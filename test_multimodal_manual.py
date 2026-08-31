@@ -63,7 +63,7 @@ multimodal_engine = MultimodalSearchEngine(
 # TEST QUERY
 # --------------------------------------------------
 
-query = "something similar but black"
+query =  "something similar for women in pink"
 
 
 # Use a catalogue image as the reference image.

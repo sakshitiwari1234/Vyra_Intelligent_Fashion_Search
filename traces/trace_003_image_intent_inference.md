@@ -95,3 +95,56 @@ Confirmed that:
 ## Status
 
 Completed.
+
+## Verification Case 2 — Text/Image Conflict Resolution
+
+### Input
+
+Reference image:
+
+`1617.jpg` — red men's T-shirt
+
+Text query:
+
+`something similar for women in pink`
+
+### Text-Derived Intent
+
+- colour = pink
+- gender = women
+
+### Image-Derived Intent
+
+- category = tshirt
+
+The image did not overwrite the explicitly supplied gender.
+
+### Final Intent
+
+- category = tshirt
+- colour = pink
+- gender = women
+
+### Result
+
+Returned products:
+
+- Roxy Women Pink T-shirt
+- Doodle Sporty Girl dark Pink Tshirts
+
+All returned products satisfied the final multimodal intent.
+
+### Verified Precedence Rule
+
+1. Explicit textual constraints have highest priority.
+2. Image-derived metadata fills only missing attributes.
+3. Semantic and visual similarity determine ranking only after constraints are satisfied.
+
+### Human Verification
+
+Confirmed that the men's gender from the reference image did not override the
+explicit request for women's products.
+
+## Status
+
+Passed.
