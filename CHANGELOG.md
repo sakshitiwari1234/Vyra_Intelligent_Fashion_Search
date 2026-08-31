@@ -341,3 +341,48 @@ still returned the correct black men's T-shirt.
 
 Heavy foundation models should be shared across compatible pipeline components
 instead of instantiated independently.
+
+
+## Iteration 7 — FastAPI Backend
+
+Status: Completed
+
+### Goal
+
+Expose VYRA's multimodal intelligence through a reproducible application API.
+
+### Change
+
+Added a FastAPI backend with:
+
+- `GET /health`
+- `POST /search/multimodal`
+- image upload handling
+- text query input
+- multimodal orchestration
+- JSON-safe ranked product responses
+- static catalogue image serving
+
+### Verification
+
+Query:
+
+`something similar but black`
+
+Uploaded image:
+
+red men's T-shirt
+
+Final inferred intent:
+
+- category = tshirt
+- colour = black
+- gender = men
+
+Returned:
+
+`4359 — Free Authority Men's Melting Records Black T-shirt`
+
+### Result
+
+The complete VYRA pipeline now works through an HTTP API rather than only local Python scripts.
